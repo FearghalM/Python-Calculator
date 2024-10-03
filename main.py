@@ -6,6 +6,10 @@ def subtract(a, b):
     """Returns the difference between a and b."""
     return a - b
 
+def multiply(a, b):
+    """Returns the product of a and b."""
+    return a * b
+
 def calculator(operation, a, b):
     """Performs the given operation on two numbers."""
     return operation(a, b)
@@ -13,8 +17,10 @@ def calculator(operation, a, b):
 def main():
     add_result = calculator(add, 5, 3)
     subtract_result = calculator(subtract, 5, 3)
-    print(f"Addition: {add_result}")       # Output: 8
+    multiply_result = calculator(multiply, 5, 3)
+    print(f"Addition: {add_result}")        # Output: 8
     print(f"Subtraction: {subtract_result}") # Output: 2
+    print(f"Multiplication: {multiply_result}") # Output: 15
 
 if __name__ == "__main__":
     main()
